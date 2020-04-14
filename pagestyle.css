@@ -1,0 +1,25 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.interface {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #252222;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+label {
+  font-family: Georgia;
+}

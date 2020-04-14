@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Binary - Decimal Converter</title>
+        <link rel="stylesheet" href="./pagestyle.css"/>
+        <script>
+            function convert() {
+                var num = document.getElementById('bNumber').value;
+                num.split('').map((char) => {
+                    if(char !== '0' && char !== '1') return alert('Please, write a binary number. Just 1 and 0.');
+                });
+                document.getElementById('result').value = parseInt(num, 2);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="interface">
+            <header id="apptitle">
+                    <h1>Binary - Decimal Converter</h1>
+            </header>
+            <form>
+                <p><label for="bNumber">Binary Input: </label>
+                    <input type="text" name="binary" id="bNumber" size="75" maxlength="75" placeholder="Binary Number"/></p>
+                <p><label>Output: </label>
+                <input type="number" name="result" id="result" size="75" maxlength="75" placeholder="Operation's result" readonly/></p>
+                <input type="button" value="Convert" onClick="convert();"/>
+            </form>
+        </div>
+    </body>
+</html>
